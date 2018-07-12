@@ -15578,7 +15578,7 @@
 		switch(type){
 			case 'UserTask' : 
 				content = '<caption>'+type+'</caption>'+
-    				'<tbody><tr>'+
+    				'<tbody><tr><td><p><b>General:</b></p></td></tr><tr>'+
   						'<td><p>id</p></td>'+
   						'<td><input type="text" name="id" value="'+id+'"></td></tr>'+
   						'<tr><td><p>name</p></td>'+
@@ -15588,58 +15588,58 @@
   						'<tr><td><p>assignee</p></td>'+
   						'<td><input type="text" name="assignee"></td>'+
   					'</tr>'+
-  					'<tr><td></td><td><button id="store" >Commit</button></td></tr></tbody>';
+  					'<tr><td></td><td class="align-right" ><button id="store" >Commit</button></td></tr></tbody>';
 				break;
 
 			case 'ServiceTask' : 
 				content = '<caption>'+type+'</caption>'+
-    				'<tbody><tr>'+
+    				'<tbody><tr><td><p><b>General:</b></p></td></tr><tr>'+
   						'<td><p>id</p></td>'+
   						'<td><input type="text" name="id" value="'+id+'"></td></tr>'+
   						'<tr><td><p>name</p></td>'+
   						'<td><input type="text" name="tagName" value="'+name+'"></td></tr>'+
   						
-  					'<tr><td></td><td><button id="store" >Commit</button></td></tr></tbody>';
+  					'<tr><td></td><td class="align-right" ><button id="store" >Commit</button></td></tr></tbody>';
 				break;
 
 			case 'ReceiveTask' :
 				content = '<caption>'+type+'</caption>'+
-    				'<tbody><tr>'+
+    				'<tbody><tr><td><p><b>General:</b></p></td></tr><tr>'+
   						'<td><p>id</p></td>'+
   						'<td><input type="text" name="id" value="'+id+'"></td></tr>'+
   						'<tr><td><p>name</p></td>'+
   						'<td><input type="text" name="tagName" value="'+name+'"></td></tr>'+
   						
-  					'<tr><td></td><td><button id="store" >Commit</button></td></tr></tbody>';
+  					'<tr><td></td><td class="align-right" ><button id="store" >Commit</button></td></tr></tbody>';
 				break;
 
 			case 'BoundaryEvent' :
 				content = '<caption>'+type+'</caption>'+
-    				'<tbody><tr>'+
+    				'<tbody><tr><td><p><b>General:</b></p></td></tr><tr>'+
   						'<td><p>id</p></td>'+
   						'<td><input type="text" name="id" value="'+id+'"></td></tr>'+
   						'<tr><td><p>name</p></td>'+
   						'<td><input type="text" name="tagName" value="'+name+'"></td></tr>'+
   						'<tr><td><p>Error Code</p></td>'+
   						'<td><input type="text" name="errorCode"></td></tr>'+
-  					'<tr><td></td><td><button id="store" >Commit</button></td></tr></tbody>';
+  					'<tr><td></td><td class="align-right" ><button id="store" >Commit</button></td></tr></tbody>';
   				break;
 
   			case 'EndEvent' :
 				content = '<caption>'+type+'</caption>'+
-    				'<tbody><tr>'+
+    				'<tbody><tr><td><p><b>General:</b></p></td></tr><tr>'+
   						'<td><p>id</p></td>'+
   						'<td><input type="text" name="id" value="'+id+'"></td></tr>'+
   						'<tr><td><p>name</p></td>'+
   						'<td><input type="text" name="tagName" value="'+name+'"></td></tr>'+
   						'<tr><td><p>Error Code</p></td>'+
   						'<td><input type="text" name="errorCode"></td></tr>'+
-  					'<tr><td></td><td><button id="store" >Commit</button></td></tr></tbody>';
+  					'<tr><td></td><td class="align-right" ><button id="store" >Commit</button></td></tr></tbody>';
   				break;
 
 			case 'ExclusiveGateway':
 				content = '<caption>'+type+'</caption>'+
-    				'<tbody><tr>'+
+    				'<tbody><tr><td><p><b>General:</b></p></td></tr><tr>'+
   						'<td><p>id</p></td>'+
   						'<td><input type="text" name="Id" value="'+id+'"></td></tr>'+
   						'<tr><td><p>Name</p></td>'+
@@ -15647,66 +15647,70 @@
   						'<tr><td><p>Default Flow</p></td>'+
   						'<td><input type="text" name="defaultFlow"></td></tr>'+
   					'</tr>'+
-  					'<tr><td></td><td><button id="store" >Commit</button></td></tr></tbody>';
+  					'<tr><td></td><td class="align-right" ><button id="store" >Commit</button></td></tr></tbody>';
   				break;
 
   			case 'InclusiveGateway':
 				content = '<caption>'+type+'</caption>'+
-    				'<tbody><tr>'+
-  						'<td><p>id</p></td>'+
+    				'<tbody>'+
+    					'<tr><td><p><b>General:</b></p></td></tr>'+
+    					'<tr><td><p>id</p></td>'+
   						'<td><input type="text" name="Id" value="'+id+'"></td></tr>'+
   						'<tr><td><p>Name</p></td>'+
   						'<td><input type="text" name="tagName" value="'+name+'"></td></tr>'+
   						'<tr><td><p>Default Flow</p></td>'+
   						'<td><input type="text" name="defaultFlow"></td></tr>'+
   					'</tr>'+
-  					'<tr><td></td><td><button id="store" >Commit</button></td></tr></tbody>';
+  					'<tr><td></td><td class="align-right" ><button id="store" >Commit</button></td></tr></tbody>';
   				break;
 
   			case 'ParallelGateway':
 				content = '<caption>'+type+'</caption>'+
-    				'<tbody><tr>'+
-  						'<td><p>id</p></td>'+
+    				'<tbody>'+
+    				'<tr><td><p><b>General:</b></p></td></tr>'+
+    				'<tr><td><p>id</p></td>'+
   						'<td><input type="text" name="Id" value="'+id+'"></td></tr>'+
   						'<tr><td><p>Name</p></td>'+
   						'<td><input type="text" name="tagName" value="'+name+'"></td></tr>'+
-  					'<tr><td></td><td><button id="store" >Commit</button></td></tr></tbody>';
+  					'<tr><td></td><td class="align-right" ><button id="store" >Commit</button></td></tr></tbody>';
   				break;
 
   			case 'SubProcess':
   				content = '<caption>'+type+'</caption>'+
-    				'<tbody><tr>'+
-  						'<td><p>id</p></td>'+
+    				'<tbody>'+
+    					'<tr><td><p><b>General:</b></p></td></tr>'+
+    					'<tr><td><p>id</p></td>'+
   						'<td><input type="text" name="Id" value="'+id+'"></td></tr>'+
   						'<tr><td><p>Name</p></td>'+
   						'<td><input type="text" name="tagName" value="'+name+'"></td></tr>'+
-  						'<tr><td><p>Multi Instance</p></td>'+
-  						'<td></td></tr>'+
+  						'<tr><td><p><b>Multi Instance:</b></p></td></tr>'+
   						'<tr><td><p>Sequential</p></td>'+
   						'<td><select><option value="1">true</option><option value="0">false</option></select></td></tr>'+
-  						'<tr><td><p>Loop Cardinality</p></td>'+
+  						'<tr><td><p>L. Cardinality</p></td>'+
   						'<td><input type="text" name="tagName"></td></tr>'+
   						'<tr><td><p>Collection</p></td>'+
   						'<td><input type="text" name="tagName"></td></tr>'+
-  						'<tr><td><p>Element Variable</p></td>'+
+  						'<tr><td><p>E. Variable</p></td>'+
   						'<td><input type="text" name="tagName"></td></tr>'+
-  						'<tr><td><p>Completion Condition</p></td>'+
+  						'<tr><td><p>C. Condition</p></td>'+
   						'<td><input type="text" name="tagName"></td></tr>'+
   					'</tr>'+
-  					'<tr><td></td><td><button id="store" >Commit</button></td></tr></tbody>';
+  					'<tr><td></td><td class="align-right" ><button id="store" >Commit</button></td></tr></tbody>';
   				break;
 
   				case 'SequenceFlow':
   					content = '<caption>'+type+'</caption>'+
-    				'<tbody><tr>'+
-  						'<td><p>id</p></td>'+
+    				'<tbody>'+
+	    				'<tr><td><p><b>General:</b></p></td></tr>'+
+	    				'<tr><td><p>id</p></td>'+
   						'<td><input type="text" name="Id" value="'+id+'"></td></tr>'+
   						'<tr><td><p>Name</p></td>'+
   						'<td><input type="text" name="tagName" value="'+name+'"></td></tr>'+
+  						'<tr><td><p><b>Condition:</b></p></td></tr>'+
   						'<tr><td><p>Condition</p></td>'+
   						'<td><input type="text" name="condition"></td></tr>'+
   					'</tr>'+
-  					'<tr><td></td><td><button id="store" >Commit</button></td></tr></tbody>';
+  					'<tr><td></td><td class="align-right" ><button id="store" >Commit</button></td></tr></tbody>';
   					break;
 		}
 		return content;

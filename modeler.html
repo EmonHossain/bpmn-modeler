@@ -53,8 +53,8 @@
 		width: 20%;
 		background-color: #fafafa;
 		height: 100%;
-		border: solid 1px #CCC;
-		border-radius: 2px;
+		border: 3px outset #CCC;
+		border-radius: 5px;
       }
       .box-title{
       	background-color: #fafafa;
@@ -66,18 +66,54 @@
 		top: 20px;
 		right: 285%;
       }
+      table{
+      	margin-top: 50px;
+		padding: 12px;
+		border: 2px outset #CCC;
+		width: 100%;
+		border-radius: 5px;
+      }
+      table tr{
+      	
+      }
+      table caption{
+      	border: 2px outset #6F5C5CCC;
+		border-radius: 5px;
+		font-size: 19px;
+		font-family: inherit;
+      }
+      table tr td button{
+      	border: 2px outset #6F5C5CCC;
+		border-radius: 4px;
+      }
+      .custom-properties-title{
+      	border: 2px outset #6F5C5CCC;
+		border-radius: 5px;
+		font-size: 22px;
+		height: 34px;
+		padding-left: 20px;
+		padding-top: 1px;
+      }
+      .align-right{
+      	text-align: right;
+      }
     </style>
   </head>
   <body>
 
-  			<div id="canvas" ></div>
+  		<div id="canvas" ></div>
   			
-    		<div id="custom-properties" class="custom-properties">
-    			<p>Properties</p>
-    			<hr>
-    			<table>
-    				
-    			</table>
+    	<div id="custom-properties" class="custom-properties">
+    		<div style="margin-top: -22px;">
+    			<p class="custom-properties-title">Properties</p>
+    		</div>
+
+    			<div>
+    				<table>
+    					<!-- Dynamic Body-->
+    				</table>
+    			</div>
+    			
   			</div>
 
   			<div class="io-import-export">
