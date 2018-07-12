@@ -15588,7 +15588,7 @@
   						'<tr><td><p>assignee</p></td>'+
   						'<td><input type="text" name="assignee"></td>'+
   					'</tr>'+
-  					'<tr><td></td><td><button id="store" name="commit"></button></td></tr></tbody>';
+  					'<tr><td></td><td><button id="store" >Commit</button></td></tr></tbody>';
 				break;
 
 			case 'ServiceTask' : 
@@ -15599,7 +15599,7 @@
   						'<tr><td><p>name</p></td>'+
   						'<td><input type="text" name="tagName" value="'+name+'"></td></tr>'+
   						
-  					'<tr><td></td><td><button id="store" name="commit"></button></td></tr></tbody>';
+  					'<tr><td></td><td><button id="store" >Commit</button></td></tr></tbody>';
 				break;
 
 			case 'ReceiveTask' :
@@ -15610,7 +15610,7 @@
   						'<tr><td><p>name</p></td>'+
   						'<td><input type="text" name="tagName" value="'+name+'"></td></tr>'+
   						
-  					'<tr><td></td><td><button id="store" name="commit"></button></td></tr></tbody>';
+  					'<tr><td></td><td><button id="store" >Commit</button></td></tr></tbody>';
 				break;
 
 			case 'BoundaryEvent' :
@@ -15622,7 +15622,7 @@
   						'<td><input type="text" name="tagName" value="'+name+'"></td></tr>'+
   						'<tr><td><p>Error Code</p></td>'+
   						'<td><input type="text" name="errorCode"></td></tr>'+
-  					'<tr><td></td><td><button id="store" name="commit"></button></td></tr></tbody>';
+  					'<tr><td></td><td><button id="store" >Commit</button></td></tr></tbody>';
   				break;
 
   			case 'EndEvent' :
@@ -15634,7 +15634,7 @@
   						'<td><input type="text" name="tagName" value="'+name+'"></td></tr>'+
   						'<tr><td><p>Error Code</p></td>'+
   						'<td><input type="text" name="errorCode"></td></tr>'+
-  					'<tr><td></td><td><button id="store" name="commit"></button></td></tr></tbody>';
+  					'<tr><td></td><td><button id="store" >Commit</button></td></tr></tbody>';
   				break;
 
 			case 'ExclusiveGateway':
@@ -15647,7 +15647,7 @@
   						'<tr><td><p>Default Flow</p></td>'+
   						'<td><input type="text" name="defaultFlow"></td></tr>'+
   					'</tr>'+
-  					'<tr><td></td><td><button id="store" name="commit"></button></td></tr></tbody>';
+  					'<tr><td></td><td><button id="store" >Commit</button></td></tr></tbody>';
   				break;
 
   			case 'InclusiveGateway':
@@ -15660,7 +15660,7 @@
   						'<tr><td><p>Default Flow</p></td>'+
   						'<td><input type="text" name="defaultFlow"></td></tr>'+
   					'</tr>'+
-  					'<tr><td></td><td><button id="store" name="commit"></button></td></tr></tbody>';
+  					'<tr><td></td><td><button id="store" >Commit</button></td></tr></tbody>';
   				break;
 
   			case 'ParallelGateway':
@@ -15670,7 +15670,7 @@
   						'<td><input type="text" name="Id" value="'+id+'"></td></tr>'+
   						'<tr><td><p>Name</p></td>'+
   						'<td><input type="text" name="tagName" value="'+name+'"></td></tr>'+
-  					'<tr><td></td><td><button id="store" name="commit"></button></td></tr></tbody>';
+  					'<tr><td></td><td><button id="store" >Commit</button></td></tr></tbody>';
   				break;
 
   			case 'SubProcess':
@@ -15693,7 +15693,7 @@
   						'<tr><td><p>Completion Condition</p></td>'+
   						'<td><input type="text" name="tagName"></td></tr>'+
   					'</tr>'+
-  					'<tr><td></td><td><button id="store" name="commit"></button></td></tr></tbody>';
+  					'<tr><td></td><td><button id="store" >Commit</button></td></tr></tbody>';
   				break;
 
   				case 'SequenceFlow':
@@ -15706,7 +15706,7 @@
   						'<tr><td><p>Condition</p></td>'+
   						'<td><input type="text" name="condition"></td></tr>'+
   					'</tr>'+
-  					'<tr><td></td><td><button id="store" name="commit"></button></td></tr></tbody>';
+  					'<tr><td></td><td><button id="store" >Commit</button></td></tr></tbody>';
   					break;
 		}
 		return content;

@@ -7,6 +7,8 @@
     <!-- required modeler styles -->
     <link rel="stylesheet" href="https://unpkg.com/bpmn-js@2.3.0/dist/assets/diagram-js.css">
     <link rel="stylesheet" href="https://unpkg.com/bpmn-js@2.3.0/dist/assets/bpmn-font/css/bpmn.css">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	
 
 	<script src="jquery.js"></script>
@@ -46,7 +48,7 @@
       }
       .custom-properties{
       	position: fixed;
-		top: 20px;
+		top: 0px;
 		right: 0px;
 		width: 20%;
 		background-color: #fafafa;
@@ -61,14 +63,8 @@
 		border-radius: 2px;
       }
       .btn-group{
-      	position: absolute;
 		top: 20px;
-		right: 22%;
-		width: 10%;
-		background-color: #fafafa;
-		height: 5%;
-		border: solid 1px #CCC;
-		border-radius: 2px;
+		right: 285%;
       }
     </style>
   </head>
@@ -84,17 +80,56 @@
     			</table>
   			</div>
 
-  			<div id="button-group" class="btn-group">
-  				<table>
-  					<tr>  						
-  						<td><button>Render</button></td>
-  					</tr>
-  				</table>
-  			</div>
+  			<div class="io-import-export">
+
+    <ul class="io-import io-control io-control-list io-horizontal">
+      <li>
+        <button title="open BPMN diagram from local file system" jsaction="click:bio.openLocal">
+          <span><i class="fa fa-folder-open" aria-hidden="true"></i></span>
+        </button>
+      </li>
+      <li class="vr" style="margin-left: 2px"></li>
+      <li>
+        <button title="create new BPMN diagram" jsaction="click:bio.createNew">
+          <span><i class="fa fa-cogs" aria-hidden="true"></i></span>
+        </button>
+      </li>
+    </ul>
 
     
+    
 
-    <button id="save-button">print to console</button>
+    <ul class="io-import io-control io-control-list io-horizontal">
+      <li>
+        <button title="reset zoom" jsaction="click:bio.zoomReset">
+          <span><i class="fa fa-compass" aria-hidden="true"></i></span>
+        </button>
+      </li>
+    </ul>
+
+    <ul class="io-import io-control io-control-list io-horizontal">
+      <li>
+        <button title="zoom in" jsaction="click:bio.zoomIn">
+          <span><i class="fa fa-search-plus" aria-hidden="true"></i>
+</span>
+        </button>
+      </li>
+      <li>
+      	<li class="vr" style="margin-left: 2px"></li>
+      </li>
+      <li>
+        <button title="zoom out" id="zoom-out">
+          <span ><i class="fa fa-search-minus" aria-hidden="true"></i>
+</span>
+        </button>
+      </li>
+    </ul>
+    
+  </div>
+
+
+
+    <!-- <button id="save-button">print to console</button> -->
 
     <script>
       //var diagramUrl = 'https://cdn.rawgit.com/bpmn-io/bpmn-js-examples/dfceecba/starter/diagram.bpmn';
@@ -263,7 +298,10 @@
       openDiagram(initDiagram);
 
       $('.bjs-powered-by').remove();
-
+      $('#zoom-out').click(function(event) {
+      	console.log("working");
+      	$('#canvas').zoom(1);
+      });
       // wire save button
       $('#save-button').click(exportDiagram);
     </script>
