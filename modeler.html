@@ -126,7 +126,7 @@
       </li>
       <li class="vr" style="margin-left: 2px"></li>
       <li>
-        <button title="create new BPMN diagram" jsaction="click:bio.createNew">
+        <button title="Compile Diagram" jsaction="click:bio.createNew">
           <span><i class="fa fa-cogs" aria-hidden="true"></i></span>
         </button>
       </li>
@@ -137,7 +137,7 @@
 
     <ul class="io-import io-control io-control-list io-horizontal">
       <li>
-        <button title="reset zoom" jsaction="click:bio.zoomReset">
+        <button title="reset zoom" id="reset-canvas">
           <span><i class="fa fa-compass" aria-hidden="true"></i></span>
         </button>
       </li>
@@ -145,7 +145,7 @@
 
     <ul class="io-import io-control io-control-list io-horizontal">
       <li>
-        <button title="zoom in" jsaction="click:bio.zoomIn">
+        <button title="zoom in" id="zoom-in-canvas">
           <span><i class="fa fa-search-plus" aria-hidden="true"></i>
 </span>
         </button>
@@ -154,7 +154,7 @@
       	<li class="vr" style="margin-left: 2px"></li>
       </li>
       <li>
-        <button title="zoom out" id="zoom-out">
+        <button title="zoom out" id="zoom-out-canvas">
           <span ><i class="fa fa-search-minus" aria-hidden="true"></i>
 </span>
         </button>
@@ -334,10 +334,26 @@
       openDiagram(initDiagram);
 
       $('.bjs-powered-by').remove();
-      $('#zoom-out').click(function(event) {
-      	console.log("working");
-      	$('#canvas').zoom(1);
+
+      $('#zoom-in-canvas').click(function(event) {
+      	event.preventDefault();
+      	var zoom = bpmnModeler.get('zoomScroll');
+      	zoom.stepZoom(1);
       });
+
+      $('#zoom-out-canvas').click(function(event) {
+      	event.preventDefault();
+      	console.log("working");
+      	var zoom = bpmnModeler.get('zoomScroll');
+      	zoom.stepZoom(-1);
+      });
+
+      $('#reset-canvas').click(function(event) {
+      	event.preventDefault();
+      	var canvas = bpmnModeler.get('canvas');
+      	canvas.zoom('fit-viewport');
+      });
+
       // wire save button
       $('#save-button').click(exportDiagram);
     </script>

@@ -15580,13 +15580,13 @@
 				content = '<caption>'+type+'</caption>'+
     				'<tbody><tr><td><p><b>General:</b></p></td></tr><tr>'+
   						'<td><p>id</p></td>'+
-  						'<td><input type="text" name="id" value="'+id+'"></td></tr>'+
+  						'<td class="align-right" ><input type="text" name="id" value="'+id+'"></td></tr>'+
   						'<tr><td><p>name</p></td>'+
-  						'<td><input type="text" name="tagName" value="'+name+'"></td></tr>'+
+  						'<td class="align-right"><input type="text" name="tagName" value="'+name+'"></td></tr>'+
   						'<tr><td><p>category</p></td>'+
-  						'<td><input type="text" name="category"></td></tr>'+
+  						'<td class="align-right"><input type="text" name="category"></td></tr>'+
   						'<tr><td><p>assignee</p></td>'+
-  						'<td><input type="text" name="assignee"></td>'+
+  						'<td class="align-right"><input type="text" name="assignee"></td>'+
   					'</tr>'+
   					'<tr><td></td><td class="align-right" ><button id="store" >Commit</button></td></tr></tbody>';
 				break;
@@ -15595,9 +15595,9 @@
 				content = '<caption>'+type+'</caption>'+
     				'<tbody><tr><td><p><b>General:</b></p></td></tr><tr>'+
   						'<td><p>id</p></td>'+
-  						'<td><input type="text" name="id" value="'+id+'"></td></tr>'+
+  						'<td class="align-right"><input type="text" name="id" value="'+id+'"></td></tr>'+
   						'<tr><td><p>name</p></td>'+
-  						'<td><input type="text" name="tagName" value="'+name+'"></td></tr>'+
+  						'<td class="align-right"><input type="text" name="tagName" value="'+name+'"></td></tr>'+
   						
   					'<tr><td></td><td class="align-right" ><button id="store" >Commit</button></td></tr></tbody>';
 				break;
@@ -15606,9 +15606,9 @@
 				content = '<caption>'+type+'</caption>'+
     				'<tbody><tr><td><p><b>General:</b></p></td></tr><tr>'+
   						'<td><p>id</p></td>'+
-  						'<td><input type="text" name="id" value="'+id+'"></td></tr>'+
+  						'<td class="align-right"><input type="text" name="id" value="'+id+'"></td></tr>'+
   						'<tr><td><p>name</p></td>'+
-  						'<td><input type="text" name="tagName" value="'+name+'"></td></tr>'+
+  						'<td class="align-right"><input type="text" name="tagName" value="'+name+'"></td></tr>'+
   						
   					'<tr><td></td><td class="align-right" ><button id="store" >Commit</button></td></tr></tbody>';
 				break;
@@ -15617,11 +15617,11 @@
 				content = '<caption>'+type+'</caption>'+
     				'<tbody><tr><td><p><b>General:</b></p></td></tr><tr>'+
   						'<td><p>id</p></td>'+
-  						'<td><input type="text" name="id" value="'+id+'"></td></tr>'+
+  						'<td class="align-right"><input type="text" name="id" value="'+id+'"></td></tr>'+
   						'<tr><td><p>name</p></td>'+
-  						'<td><input type="text" name="tagName" value="'+name+'"></td></tr>'+
+  						'<td class="align-right"><input type="text" name="tagName" value="'+name+'"></td></tr>'+
   						'<tr><td><p>Error Code</p></td>'+
-  						'<td><input type="text" name="errorCode"></td></tr>'+
+  						'<td class="align-right"><input type="text" name="errorCode"></td></tr>'+
   					'<tr><td></td><td class="align-right" ><button id="store" >Commit</button></td></tr></tbody>';
   				break;
 
@@ -15629,11 +15629,11 @@
 				content = '<caption>'+type+'</caption>'+
     				'<tbody><tr><td><p><b>General:</b></p></td></tr><tr>'+
   						'<td><p>id</p></td>'+
-  						'<td><input type="text" name="id" value="'+id+'"></td></tr>'+
+  						'<td class="align-right"><input type="text" name="id" value="'+id+'"></td></tr>'+
   						'<tr><td><p>name</p></td>'+
-  						'<td><input type="text" name="tagName" value="'+name+'"></td></tr>'+
+  						'<td class="align-right"><input type="text" name="tagName" value="'+name+'"></td></tr>'+
   						'<tr><td><p>Error Code</p></td>'+
-  						'<td><input type="text" name="errorCode"></td></tr>'+
+  						'<td class="align-right"><input type="text" name="errorCode"></td></tr>'+
   					'<tr><td></td><td class="align-right" ><button id="store" >Commit</button></td></tr></tbody>';
   				break;
 
@@ -15641,11 +15641,11 @@
 				content = '<caption>'+type+'</caption>'+
     				'<tbody><tr><td><p><b>General:</b></p></td></tr><tr>'+
   						'<td><p>id</p></td>'+
-  						'<td><input type="text" name="Id" value="'+id+'"></td></tr>'+
+  						'<td class="align-right"><input type="text" name="Id" value="'+id+'"></td></tr>'+
   						'<tr><td><p>Name</p></td>'+
-  						'<td><input type="text" name="tagName" value="'+name+'"></td></tr>'+
+  						'<td class="align-right"><input type="text" name="tagName" value="'+name+'"></td></tr>'+
   						'<tr><td><p>Default Flow</p></td>'+
-  						'<td><input type="text" name="defaultFlow"></td></tr>'+
+  						'<td class="align-right"><input type="text" name="defaultFlow"></td></tr>'+
   					'</tr>'+
   					'<tr><td></td><td class="align-right" ><button id="store" >Commit</button></td></tr></tbody>';
   				break;
@@ -15655,11 +15655,11 @@
     				'<tbody>'+
     					'<tr><td><p><b>General:</b></p></td></tr>'+
     					'<tr><td><p>id</p></td>'+
-  						'<td><input type="text" name="Id" value="'+id+'"></td></tr>'+
+  						'<td class="align-right"><input type="text" name="Id" value="'+id+'"></td></tr>'+
   						'<tr><td><p>Name</p></td>'+
-  						'<td><input type="text" name="tagName" value="'+name+'"></td></tr>'+
+  						'<td class="align-right"><input type="text" name="tagName" value="'+name+'"></td></tr>'+
   						'<tr><td><p>Default Flow</p></td>'+
-  						'<td><input type="text" name="defaultFlow"></td></tr>'+
+  						'<td class="align-right"><input type="text" name="defaultFlow"></td></tr>'+
   					'</tr>'+
   					'<tr><td></td><td class="align-right" ><button id="store" >Commit</button></td></tr></tbody>';
   				break;
@@ -15669,9 +15669,9 @@
     				'<tbody>'+
     				'<tr><td><p><b>General:</b></p></td></tr>'+
     				'<tr><td><p>id</p></td>'+
-  						'<td><input type="text" name="Id" value="'+id+'"></td></tr>'+
+  						'<td class="align-right"><input type="text" name="Id" value="'+id+'"></td></tr>'+
   						'<tr><td><p>Name</p></td>'+
-  						'<td><input type="text" name="tagName" value="'+name+'"></td></tr>'+
+  						'<td class="align-right"><input type="text" name="tagName" value="'+name+'"></td></tr>'+
   					'<tr><td></td><td class="align-right" ><button id="store" >Commit</button></td></tr></tbody>';
   				break;
 
@@ -15680,20 +15680,20 @@
     				'<tbody>'+
     					'<tr><td><p><b>General:</b></p></td></tr>'+
     					'<tr><td><p>id</p></td>'+
-  						'<td><input type="text" name="Id" value="'+id+'"></td></tr>'+
+  						'<td class="align-right"><input type="text" name="Id" value="'+id+'"></td></tr>'+
   						'<tr><td><p>Name</p></td>'+
-  						'<td><input type="text" name="tagName" value="'+name+'"></td></tr>'+
+  						'<td class="align-right"><input type="text" name="tagName" value="'+name+'"></td></tr>'+
   						'<tr><td><p><b>Multi Instance:</b></p></td></tr>'+
   						'<tr><td><p>Sequential</p></td>'+
-  						'<td><select><option value="1">true</option><option value="0">false</option></select></td></tr>'+
+  						'<td class="align-right" ><select><option value="1">true</option><option value="0">false</option></select></td></tr>'+
   						'<tr><td><p>L. Cardinality</p></td>'+
-  						'<td><input type="text" name="tagName"></td></tr>'+
+  						'<td class="align-right"><input type="text" name="tagName"></td></tr>'+
   						'<tr><td><p>Collection</p></td>'+
-  						'<td><input type="text" name="tagName"></td></tr>'+
+  						'<td class="align-right"><input type="text" name="tagName"></td></tr>'+
   						'<tr><td><p>E. Variable</p></td>'+
-  						'<td><input type="text" name="tagName"></td></tr>'+
+  						'<td class="align-right"><input type="text" name="tagName"></td></tr>'+
   						'<tr><td><p>C. Condition</p></td>'+
-  						'<td><input type="text" name="tagName"></td></tr>'+
+  						'<td class="align-right"><input type="text" name="tagName"></td></tr>'+
   					'</tr>'+
   					'<tr><td></td><td class="align-right" ><button id="store" >Commit</button></td></tr></tbody>';
   				break;
@@ -15703,12 +15703,12 @@
     				'<tbody>'+
 	    				'<tr><td><p><b>General:</b></p></td></tr>'+
 	    				'<tr><td><p>id</p></td>'+
-  						'<td><input type="text" name="Id" value="'+id+'"></td></tr>'+
+  						'<td class="align-right"><input type="text" name="Id" value="'+id+'"></td></tr>'+
   						'<tr><td><p>Name</p></td>'+
-  						'<td><input type="text" name="tagName" value="'+name+'"></td></tr>'+
+  						'<td class="align-right"><input type="text" name="tagName" value="'+name+'"></td></tr>'+
   						'<tr><td><p><b>Condition:</b></p></td></tr>'+
   						'<tr><td><p>Condition</p></td>'+
-  						'<td><input type="text" name="condition"></td></tr>'+
+  						'<td class="align-right"><input type="text" name="condition"></td></tr>'+
   					'</tr>'+
   					'<tr><td></td><td class="align-right" ><button id="store" >Commit</button></td></tr></tbody>';
   					break;
@@ -15721,22 +15721,85 @@
 		table.empty();
 		var type = type.split(':')[1];
 		var content = getTableContent(type,id,name);
-		/*var content = '<caption>'+type+'</caption>'+
-    				'<tbody><tr>'+
-  						'<td><p>id</p></td>'+
-  						'<td><input type="text" name="id" value="'+id+'"></td></tr>'+
-  						'<tr><td><p>name</p></td>'+
-  						'<td><input type="text" name="tagName" value="'+name+'"></td></tr>'+
-  						'<tr><td><p>category</p></td>'+
-  						'<td><input type="text" name="category"></td></tr>'+
-  						'<tr><td><p>assignee</p></td>'+
-  						'<td><input type="text" name="assignee"></td>'+
-  					'</tr>'+
-  					'<tr><td></td><td><button id="store" name="commit"></button></td></tr></tbody>';*/
-  					console.log("get Called");
 		table.append(content);
 	}
 
+	var objArray = [];
+	/*
+		Store element data in local storage in Array form
+	*/
+	$(document).on('click', '#store', function(event) {
+		event.preventDefault();
+		var table = $('#custom-properties').find('table');
+		console.log('working');
+		var id,type,data='';
+		table.find('tr').each(function(index, el) {
+			var input = $(this).find('td').last().find('input');
+			var name = input.attr('name');
+			var value = input.val();
+
+			if (name!=undefined && value!=undefined) {
+				console.log('name : '+name+'value : '+value);
+
+				if(name==='id'){
+					id = value;
+					type = table.find('caption').text();
+				}else{
+					if(value.length===0)
+						value = 'null';
+					data = data+name+':'+value+',';
+					console.log(data);
+				}
+			}
+			
+		});
+		storeTag(id,type,data);
+		console.log(objArray);
+	});
+
+	//Check before make a new entry
+	var storeTag = function(id,type,data){
+		var modify = false;
+		if(objArray.length>0){
+			for (var i = 0; i < objArray.length; i++) {
+				if (objArray[i].id === id) {
+					objArray[i].type = type;
+					objArray[i].data = data;
+					modify = true;
+				}
+			}
+		}
+
+		if (!modify) {
+			var obj = new Object();
+			obj.id = id;
+			obj.type = type;
+			obj.data = data;
+			objArray.push(obj);
+		}		
+	}
+
+	// Re write table value with corrected data
+	var getRecentValues = function(id,type){
+
+		if(objArray.length>0){
+			for (var i = 0; i < objArray.length; i++) {
+				if (objArray[i].id === id && objArray[i].type === type.split(':')[1]) {
+					var table = $('#custom-properties').find('table');
+					console.log('getRecentValues working');
+					var dataArr = objArray[i].data.split(',');
+
+					$.each(dataArr, function(index, val) {
+						 var arr = val.split(':');
+						 var key = arr[0];
+						 var value = arr[1];
+
+						 table.find('input[name="'+key+'"]').val(value);
+					});
+				}
+			}
+		}
+	}
 
 	Selection.prototype.get = function() {
 		var e = this._selectedElements;
@@ -15747,6 +15810,7 @@
 			 __elementName = val.businessObject.name;
 			 console.log(__elementId+" "+__elementType);
 			 createTable(__elementId,__elementType,__elementName);
+			 getRecentValues(__elementId,__elementType,__elementName);
 		});
 	  return this._selectedElements;
 	};
@@ -15914,7 +15978,7 @@
 
 	    var isSelected = selection.isSelected(element),
 	        isMultiSelect = selection.get().length > 1;
-
+	        console.log(element);
 	    // mouse-event: SELECTION_KEY
 	    var add = hasPrimaryModifier(event);
 
