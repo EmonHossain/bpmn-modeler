@@ -15724,6 +15724,10 @@
 		table.append(content);
 	}
 
+	function removeTable(){
+		$("#custom-properties").find('table').empty();
+	}
+
 	var objArray = [];
 	/*
 		Store element data in local storage in Array form
@@ -15802,16 +15806,6 @@
 	}
 
 	Selection.prototype.get = function() {
-		var e = this._selectedElements;
-		console.log(this);
-		$.each(e, function(index, val) {
-			 __elementId = val.id;
-			 __elementType = val.type;
-			 __elementName = val.businessObject.name;
-			 console.log(__elementId+" "+__elementType);
-			 createTable(__elementId,__elementType,__elementName);
-			 getRecentValues(__elementId,__elementType,__elementName);
-		});
 	  return this._selectedElements;
 	};
 
@@ -15968,6 +15962,8 @@
 	  // Shift + click selection
 	  eventBus.on('element.click', function(event) {
 
+	  	console.log("Element selected....");
+
 	    var element = event.element;
 
 	    // do not select the root element
@@ -15975,10 +15971,21 @@
 	    if (element === canvas.getRootElement()) {
 	      element = null;
 	    }
+	    
+	    if (element!= null) {		
+			 __elementId = element.id;
+			 __elementType = element.type;
+			 __elementName = element.businessObject.name;
+			 console.log(__elementId+" "+__elementType);
+			 createTable(__elementId,__elementType,__elementName);
+			 getRecentValues(__elementId,__elementType,__elementName);
+	    }else{
+	    	removeTable();
+	    }
 
 	    var isSelected = selection.isSelected(element),
 	        isMultiSelect = selection.get().length > 1;
-	        console.log(element);
+	        
 	    // mouse-event: SELECTION_KEY
 	    var add = hasPrimaryModifier(event);
 
